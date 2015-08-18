@@ -17,7 +17,8 @@
 1、环境搭建1.1安装Node.js  官网：https://nodejs.org/1.2安装Git      官网：http://git-scm.com/1.3安装Hexo打开Git Bash    $ npm install -g hexo-cli在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令">
 <meta property="og:image" content="http://webb2016.github.io/images/8.18/1.png">
 <meta property="og:image" content="http://webb2016.github.io/images/8.18/2.png">
-<meta property="og:updated_time" content="2015-08-18T13:46:18.887Z">
+<meta property="og:image" content="http://webb2016.github.io/images/8.18/3.png">
+<meta property="og:updated_time" content="2015-08-18T14:12:17.669Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何创建GitHub个人博客">
 <meta name="twitter:description" content="想不想拥有个人博客，那么按照本文教程自己动手吧！
@@ -217,24 +218,12 @@
       
         <p>   想不想拥有个人博客，那么按照本文教程自己动手吧！</p>
 <hr>
-<p><strong>1、环境搭建</strong><br>1.1安装Node.js  官网：<a href="https://nodejs.org/" target="_blank" rel="external">https://nodejs.org/</a><br>1.2安装Git      官网：<a href="http://git-scm.com/" target="_blank" rel="external">http://git-scm.com/</a><br>1.3安装Hexo<br>打开Git Bash<br>    $ npm install -g hexo-cli<br>在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令<br>    $ hexo init nodejs-hexo<br>在Hexo3中,hexo-server独立出来了,如要本地调试,需要先安装<br>    $ npm install hexo-server –save<br>到\node_modules目录下面看自己是不是已经安装了这些模块,如果没有则安装</p>
-<pre><code>npm <span class="operator"><span class="keyword">install</span> hexo-generator-<span class="keyword">index</span> <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-generator-<span class="keyword">archive</span> <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-generator-<span class="keyword">category</span> <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-generator-tag <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-<span class="keyword">server</span> <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-renderer-marked@<span class="number">0.2</span> <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-renderer-stylus@<span class="number">0.2</span> <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-generator-feed@<span class="number">1</span> <span class="comment">--save</span>
-npm <span class="keyword">install</span> hexo-generator-sitemap@<span class="number">1</span> <span class="comment">--save</span></span>
-</code></pre><hr>
-<p><strong>1、注册GitHub</strong><br>官网：<a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a></p>
+<p><strong>1、环境搭建</strong><br>1.1安装Node.js  官网：<a href="https://nodejs.org/" target="_blank" rel="external">https://nodejs.org/</a><br>1.2安装Git      官网：<a href="http://git-scm.com/" target="_blank" rel="external">http://git-scm.com/</a><br>1.3安装Hexo<br>打开Git Bash<br>    $ npm install -g hexo-cli<br>在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令<br>    $ hexo init nodejs-hexo<br>在Hexo3中,hexo-server独立出来了,如要本地调试,需要先安装<br>    $ npm install hexo-server –save<br>到\node_modules目录下面看自己是不是已经安装了这些模块,如果没有则安装<br>    npm install hexo-generator-index –save<br>    npm install hexo-generator-archive –save<br>    npm install hexo-generator-category –save<br>    npm install hexo-generator-tag –save<br>    npm install hexo-server –save<br>    npm install hexo-deployer-git –save<br>    npm install hexo-renderer-marked@0.2 –save<br>    npm install hexo-renderer-stylus@0.2 –save<br>    npm install hexo-generator-feed@1 –save<br>    npm install hexo-generator-sitemap@1 –save<br>启动本地服务<br>    $ hexo generate<br>    $ hexo server<br>在浏览器地址栏输入local:4000即可看到Hexo页面</p>
 <hr>
-<p><strong>1、注册GitHub</strong><br>官网：<a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a></p>
+<p><strong>2、注册GitHub</strong><br>官网：<a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a></p>
 <hr>
-<p><strong>2、配置GitHub</strong><br>2.1建立Repository<br><img src="/images/8.18/1.png" alt=""></p>
-<p><strong>仓库名必须为【your_user_name.github.io】</strong><br><img src="/images/8.18/2.png" alt=""></p>
+<p><strong>3、配置GitHub</strong><br>3.1建立Repository<br><img src="/images/8.18/1.png" alt=""></p>
+<p><strong>仓库名必须为【your_user_name.github.io】</strong><br><img src="/images/8.18/2.png" alt=""><br>3.2配置SSH keys<br>可以用Git Gui的ssh工具生成key<br><img src="/images/8.18/3.png" alt=""></p>
 
       
     </div>
