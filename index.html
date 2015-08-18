@@ -195,28 +195,15 @@
       
         <p>   想不想拥有个人博客，那么按照本文教程自己动手吧！</p>
 <hr>
-<p><strong>1、环境搭建</strong><br>1.1安装Node.js  官网：<a href="https://nodejs.org/" target="_blank" rel="external">https://nodejs.org/</a><br>1.2安装Git      官网：<a href="http://git-scm.com/" target="_blank" rel="external">http://git-scm.com/</a><br>1.3安装Hexo<br>    打开Git Bash<br>    <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<pre><code><span class="comment">在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git</span> <span class="comment">Bash。执行下面的命令</span>
-&lt;<span class="comment">!</span><span class="literal">-</span><span class="literal">-</span><span class="comment">￼1</span><span class="literal">-</span><span class="literal">-</span>&gt;
-
-<span class="comment">在Hexo3中</span><span class="string">,</span><span class="comment">hexo</span><span class="literal">-</span><span class="comment">server独立出来了</span><span class="string">,</span><span class="comment">如要本地调试</span><span class="string">,</span><span class="comment">需要先安装</span>
-<span class="comment">```{bash}</span>
-<span class="comment">$</span> <span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">server</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">```</span>   
-<span class="comment">到\node_modules目录下面看自己是不是已经安装了这些模块</span><span class="string">,</span><span class="comment">如果没有则安装</span>
-<span class="comment">```{bash}</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">generator</span><span class="literal">-</span><span class="comment">index</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">generator</span><span class="literal">-</span><span class="comment">archive</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">generator</span><span class="literal">-</span><span class="comment">category</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">generator</span><span class="literal">-</span><span class="comment">tag</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">server</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">deployer</span><span class="literal">-</span><span class="comment">git</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">renderer</span><span class="literal">-</span><span class="comment">marked@0</span><span class="string">.</span><span class="comment">2</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">renderer</span><span class="literal">-</span><span class="comment">stylus@0</span><span class="string">.</span><span class="comment">2</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">generator</span><span class="literal">-</span><span class="comment">feed@1</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">npm</span> <span class="comment">install</span> <span class="comment">hexo</span><span class="literal">-</span><span class="comment">generator</span><span class="literal">-</span><span class="comment">sitemap@1</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">save</span>
-<span class="comment">```</span> 
-</code></pre><hr>
+<p><strong>1、环境搭建</strong><br>1.1安装Node.js  官网：<a href="https://nodejs.org/" target="_blank" rel="external">https://nodejs.org/</a><br>1.2安装Git      官网：<a href="http://git-scm.com/" target="_blank" rel="external">http://git-scm.com/</a><br>1.3安装Hexo<br>打开Git Bash<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init nodejs-hexo</span><br></pre></td></tr></table></figure></p>
+<p>在Hexo3中,hexo-server独立出来了,如要本地调试,需要先安装</p>
+<pre><code class="{bash}">$ npm install hexo-server --save
+</code></pre>
+<p>到\node_modules目录下面看自己是不是已经安装了这些模块,如果没有则安装</p>
+<pre><code class="{bash}">npm install hexo-generator-index --save&#10;npm install hexo-generator-archive --save&#10;npm install hexo-generator-category --save&#10;npm install hexo-generator-tag --save&#10;npm install hexo-server --save&#10;npm install hexo-deployer-git --save&#10;npm install hexo-renderer-marked@0.2 --save&#10;npm install hexo-renderer-stylus@0.2 --save&#10;npm install hexo-generator-feed@1 --save&#10;npm install hexo-generator-sitemap@1 --save
+</code></pre>
+<hr>
 <p><strong>1、注册GitHub</strong><br>官网：<a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a></p>
 <hr>
 <p><strong>1、注册GitHub</strong><br>官网：<a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a></p>
