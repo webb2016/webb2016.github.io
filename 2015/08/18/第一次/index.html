@@ -7,24 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="想不想拥有个人博客，那么按照本文教程自己动手吧！
 
-1、环境搭建1.1安装Node.js  官网：https://nodejs.org/1.2安装Git      官网：http://git-scm.com/1.3安装Hexo打开Git Bash    $ npm install -g hexo-cli在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令">
+1、环境搭建1.1安装Node.js  官网：https://nodejs.org/1.2安装Git      官网：http://git-scm.com/1.3安装Hexo打开Git Bash
+$ npm install -g hexo-cli    
+在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何创建GitHub个人博客">
 <meta property="og:url" content="http://webb2016.github.io/2015/08/18/第一次/index.html">
 <meta property="og:site_name" content="Webb2016">
 <meta property="og:description" content="想不想拥有个人博客，那么按照本文教程自己动手吧！
 
-1、环境搭建1.1安装Node.js  官网：https://nodejs.org/1.2安装Git      官网：http://git-scm.com/1.3安装Hexo打开Git Bash    $ npm install -g hexo-cli在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令">
+1、环境搭建1.1安装Node.js  官网：https://nodejs.org/1.2安装Git      官网：http://git-scm.com/1.3安装Hexo打开Git Bash
+$ npm install -g hexo-cli    
+在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的">
 <meta property="og:image" content="http://webb2016.github.io/images/8.18/1.png">
 <meta property="og:image" content="http://webb2016.github.io/images/8.18/2.png">
 <meta property="og:image" content="http://webb2016.github.io/images/8.18/3.png">
 <meta property="og:image" content="http://webb2016.github.io/images/8.18/4.png">
-<meta property="og:updated_time" content="2015-08-18T14:39:46.890Z">
+<meta property="og:updated_time" content="2015-08-18T14:53:47.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何创建GitHub个人博客">
 <meta name="twitter:description" content="想不想拥有个人博客，那么按照本文教程自己动手吧！
 
-1、环境搭建1.1安装Node.js  官网：https://nodejs.org/1.2安装Git      官网：http://git-scm.com/1.3安装Hexo打开Git Bash    $ npm install -g hexo-cli在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令">
+1、环境搭建1.1安装Node.js  官网：https://nodejs.org/1.2安装Git      官网：http://git-scm.com/1.3安装Hexo打开Git Bash
+$ npm install -g hexo-cli    
+在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的">
   
     <link rel="alternative" href="/atom.xml" title="Webb2016" type="application/atom+xml">
   
@@ -219,7 +225,27 @@
       
         <p>   想不想拥有个人博客，那么按照本文教程自己动手吧！</p>
 <hr>
-<p><strong>1、环境搭建</strong><br>1.1安装Node.js  官网：<a href="https://nodejs.org/" target="_blank" rel="external">https://nodejs.org/</a><br>1.2安装Git      官网：<a href="http://git-scm.com/" target="_blank" rel="external">http://git-scm.com/</a><br>1.3安装Hexo<br>打开Git Bash<br>    $ npm install -g hexo-cli<br>在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令<br>    $ hexo init nodejs-hexo<br>在Hexo3中,hexo-server独立出来了,如要本地调试,需要先安装<br>    $ npm install hexo-server –save<br>到\node_modules目录下面看自己是不是已经安装了这些模块,如果没有则安装<br>    npm install hexo-generator-index –save<br>    npm install hexo-generator-archive –save<br>    npm install hexo-generator-category –save<br>    npm install hexo-generator-tag –save<br>    npm install hexo-server –save<br>    npm install hexo-deployer-git –save<br>    npm install hexo-renderer-marked@0.2 –save<br>    npm install hexo-renderer-stylus@0.2 –save<br>    npm install hexo-generator-feed@1 –save<br>    npm install hexo-generator-sitemap@1 –save<br>启动本地服务<br>    $ hexo generate<br>    $ hexo server<br>在浏览器地址栏输入local:4000即可看到Hexo页面</p>
+<p><strong>1、环境搭建</strong><br>1.1安装Node.js  官网：<a href="https://nodejs.org/" target="_blank" rel="external">https://nodejs.org/</a><br>1.2安装Git      官网：<a href="http://git-scm.com/" target="_blank" rel="external">http://git-scm.com/</a><br>1.3安装Hexo<br>打开Git Bash</p>
+<pre><code>$ npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo-cli    </span>
+</code></pre><p>在电脑中建立一个名字叫Hexo的文件夹，然后在此文件夹中右键打开Git Bash。执行下面的命令</p>
+<pre><code><span class="variable">$ </span>hexo init nodejs-hexo
+</code></pre><p>在Hexo3中,hexo-server独立出来了,如要本地调试,需要先安装</p>
+<pre><code>$ npm <span class="operator"><span class="keyword">install</span> hexo-<span class="keyword">server</span> <span class="comment">--save</span></span>
+</code></pre><p>到\node_modules目录下面看自己是不是已经安装了这些模块,如果没有则安装</p>
+<pre><code>npm <span class="operator"><span class="keyword">install</span> hexo-generator-<span class="keyword">index</span> <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-generator-<span class="keyword">archive</span> <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-generator-<span class="keyword">category</span> <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-generator-tag <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-<span class="keyword">server</span> <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-renderer-marked@<span class="number">0.2</span> <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-renderer-stylus@<span class="number">0.2</span> <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-generator-feed@<span class="number">1</span> <span class="comment">--save</span>
+npm <span class="keyword">install</span> hexo-generator-sitemap@<span class="number">1</span> <span class="comment">--save</span></span>
+</code></pre><p>启动本地服务</p>
+<pre><code><span class="variable">$ </span>hexo generate
+<span class="variable">$ </span>hexo server
+</code></pre><p>在浏览器地址栏输入local:4000即可看到Hexo页面</p>
 <hr>
 <p><strong>2、注册GitHub</strong><br>官网：<a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a></p>
 <hr>
@@ -234,11 +260,11 @@
 </code></pre><p>执行下列指令即可完成部署。</p>
 <pre><code><span class="title">hexo</span> generate
 hexo deploy
-</code></pre><p>这时打开你的博客，如我的是<a href="http://webb2016.github.io/,即可看到之前在本地看到的Hexo页面">http://webb2016.github.io/,即可看到之前在本地看到的Hexo页面</a></p>
+</code></pre><p>这时打开你的博客，如我的是<a href="http://webb2016.github.io/">http://webb2016.github.io/</a><br>即可看到之前在本地看到的Hexo页面</p>
 <hr>
 <p><strong>5、Hexo高级设置</strong><br>5.1安装主题<br>GitHub上有很多很棒的主题，如果想要我这个主题，<a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="external">点击我</a><br><img src="/images/8.18/4.png" alt=""><br>将Git Shell 切到Hexo目录下，然后执行下面的命令，将主题下载到 themes目录下。</p>
 <pre><code><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/litten</span><span class="regexp">/hexo-theme-yilia.git</span>
-</code></pre><p>修改博客根目录Hexo下的config.yml配置文件中的theme属性，将其设置为themes目录下的主题文件名。<br>    theme: hexo-theme-yilia</p>
+</code></pre><p>修改博客根目录Hexo下的_config.yml配置文件中的theme属性，将其设置为themes目录下的主题文件名。<br>    theme: hexo-theme-yilia<br>5.2添加评论区<br>我们下载的主题里面包含了第三方评论系统，到主题目录里面的_config.yml中去查看，如使用多说评论系统，<br>则到多说官网去注册，在_config.yml将得到的duoshuo-key输入<br>这样的话可能会出现很多莫名其妙的评论，解决方法如下：<br>假设在多说网站的二级域名为xxxx.duoshuo.com<br>我们需要打开themes/yilia/layout/_partial/post/duoshuo.ejs<br>将var duoshuoQuery = {short_name:”&lt;%=theme.duoshuo%&gt;”};修改为var duoshuoQuery = {short_name:”xxxx”};。</p>
 
       
     </div>
