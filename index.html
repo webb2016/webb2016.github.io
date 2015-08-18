@@ -220,7 +220,7 @@ npm <span class="keyword">install</span> hexo-generator-sitemap@<span class="num
 <p><strong>2、注册GitHub</strong><br>官网：<a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a></p>
 <hr>
 <p><strong>3、配置GitHub</strong><br>3.1建立Repository<br><img src="/images/8.18/1.png" alt=""></p>
-<p><strong>仓库名必须为【your_user_name.github.io】</strong><br><img src="/images/8.18/2.png" alt=""><br>3.2配置SSH keys<br>可以用Git Gui的ssh工具生成key<br><img src="/images/8.18/3.png" alt=""><br>添加SSH Key到GitHub<br>登陆github系统，点击右上角的 Account Settings—-&gt;SSH Public keys —-&gt; add another public keys<br>把你本地生成的密钥复制到里面（key文本框中），点击add key就ok了</p>
+<p><strong>仓库名必须为【your_user_name.github.io】</strong><br><img src="/images/8.18/2.png" alt=""><br>3.2配置SSH key<br>可以用Git Gui的ssh工具生成key<br><img src="/images/8.18/3.png" alt=""><br>添加SSH Key到GitHub<br>登陆github系统，点击右上角的 Account Settings—-&gt;SSH Public keys —-&gt; add another public keys<br>把你本地生成的密钥复制到里面（key文本框中），点击add key就ok了</p>
 <hr>
 <p><strong>4、部署Hexo</strong><br>GitHub博客已经建立好了，那如何将本地的Hexo页面上传到我们的博客上呢？<br>编辑 _config.yml (在Hexo文件下)，把账号名换成你自己的即可，<strong>注意这里冒号有空格</strong></p>
 <pre><code><span class="attribute">deploy</span>:
@@ -230,7 +230,7 @@ npm <span class="keyword">install</span> hexo-generator-sitemap@<span class="num
 </code></pre><p>执行下列指令即可完成部署。</p>
 <pre><code><span class="title">hexo</span> generate
 hexo deploy
-</code></pre><p>这时打开你的博客，如我的是<a href="http://webb2016.github.io/">http://webb2016.github.io/</a><br>即可看到之前在本地看到的Hexo页面</p>
+</code></pre><p>这时打开你的博客，如我的是<a href="http://webb2016.github.io/">http://webb2016.github.io/</a><br>即可看到之前在本地看到的Hexo页面<br>如果出现错误提示：Permission denied (publickey)，则说明SSH key没配置好，按照步骤3.2进行配置</p>
 <hr>
 <p><strong>5、Hexo高级设置</strong><br>5.1安装主题<br>GitHub上有很多很棒的主题，如果想要我这个主题，<a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="external">点击我</a><br><img src="/images/8.18/4.png" alt=""><br>将Git Shell 切到Hexo目录下，然后执行下面的命令，将主题下载到 themes目录下。</p>
 <pre><code><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/litten</span><span class="regexp">/hexo-theme-yilia.git</span>
