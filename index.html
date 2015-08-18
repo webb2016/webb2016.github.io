@@ -234,8 +234,23 @@ hexo deploy
 <hr>
 <p><strong>5、Hexo高级设置</strong><br>5.1安装主题<br>GitHub上有很多很棒的主题，如果想要我这个主题，<a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="external">点击我</a><br><img src="/images/8.18/4.png" alt=""><br>将Git Shell 切到Hexo目录下，然后执行下面的命令，将主题下载到 themes目录下。</p>
 <pre><code><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/litten</span><span class="regexp">/hexo-theme-yilia.git</span>
-</code></pre><p>修改博客根目录Hexo下的_config.yml配置文件中的theme属性，将其设置为themes目录下的主题文件名。<br>    theme: hexo-theme-yilia<br>5.2添加评论区<br>我们下载的主题里面包含了第三方评论系统，到主题目录里面的_config.yml中去查看，如使用多说评论系统，<br>则到多说官网去注册，在_config.yml将得到的duoshuo-key输入<br>这样的话可能会出现很多莫名其妙的评论，解决方法如下：<br>假设在多说网站的二级域名为xxxx.duoshuo.com<br>我们需要打开themes/yilia/layout/_partial/post/duoshuo.ejs<br>将var duoshuoQuery = {short_name:”&lt;%=theme.duoshuo%&gt;”};修改为var duoshuoQuery = {short_name:”xxxx”};。</p>
-
+</code></pre><p>修改博客根目录Hexo下的_config.yml配置文件中的theme属性，将其设置为themes目录下的主题文件名。<br>    theme: hexo-theme-yilia<br>5.2添加评论区<br>我们下载的主题里面包含了第三方评论系统，到主题目录里面的_config.yml中去查看，如使用多说评论系统，<br>则到多说官网去注册，在_config.yml将得到的duoshuo-key输入<br>这样的话可能会出现很多莫名其妙的评论，解决方法如下：<br>假设在多说网站的二级域名为xxxx.duoshuo.com<br>我们需要打开themes/hexo-theme-yilia/layout/_partial/post/duoshuo.ejs<br>将var duoshuoQuery = {short_name:”&lt;%=theme.duoshuo%&gt;”};修改为var duoshuoQuery = {short_name:”xxxx”};。<br>5.3添加“Fork me on Github” 链接<br>将相应代码复制到Hexo正在使用的theme下layout.ejs中。将下面的代码（注意你自己的github上的注册名）</p>
+<pre><code>&lt;<span class="tag">a</span> href=<span class="string">"https://github.com/webb2016"</span>&gt;&lt;<span class="tag">img</span> style=<span class="string">"position: fiexed; top: 0; left: 0; border: 0;"</span> src=<span class="string">"https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67"</span> alt=<span class="string">"Fork me on GitHub"</span> data-canonical-src=<span class="string">"https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"</span>&gt;&lt;/a&gt;
+</code></pre><p>粘贴到layout.ejs中，放置在标签之前即可。<br>5.4更换404页面<br>在Hexo/source目录下创建自己的 404.html，将下面的代码拷入其中</p>
+<pre><code>---
+layout: default
+---
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+         <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span> /&gt;</span>
+         <span class="tag">&lt;<span class="title">title</span>&gt;</span>404<span class="tag">&lt;/<span class="title">title</span>&gt;</span>                                                                                                                                        
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"http://www.qq.com/404/search_children.js"</span> 
+        <span class="attribute">charset</span>=<span class="value">"utf-8"</span> <span class="attribute">homePageUrl</span>=<span class="value">"http://webb2016.github.io/"</span> <span class="attribute">homePageName</span>=<span class="value">"回到我的主页"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</code></pre>
       
     </div>
     
